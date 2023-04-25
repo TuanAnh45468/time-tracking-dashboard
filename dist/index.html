@@ -1,71 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="output.css">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
-</head>
-<body class="bg-dark-blue">
-  Report for
-  Jeremy Robson
+    <link
+      href="images/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="output.css" rel="stylesheet" />
 
-  Daily
-  Weekly
-  Monthly
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body class="bg-deep-blue">
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+  <main class="mobile:mx-6 mobile:my-20 grid laptop:grid-cols-4 auto-rows-auto mobile:gap-y-6 bg-deep-blue">
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <div class="relative z-10 mobile:h-[203px] laptop:row-start-1 laptop:row-span-2">
+      <div class="flex items-center gap-5 rounded-xl bg-blue mobile:w-[327px] mobile:h-[133px]">
+        <img alt="avatar" class="mobile:ml-8 mobile:w-[64px] mobile:h-[64px] laptop:w-[78px] laptop:h-[78px]" src="images/image-jeremy.png">
+        <p class="text-white">Report for <br>  <span>Jeremy Robson</span></p>
+      </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <div class="absolute flex place-content-around items-end rounded-xl pb-6 z-[-1] text-desaturated-blue translate-x-[0%] translate-y-[-66%] mobile:w-[327px] mobile:h-[203px] bg-dark-blue">
+        <span>Daily</span>
+        <span class="text-white">Weekly</span>
+        <span>Monthly</span>
+      </div>
+    </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+    <div class="card bg-light-red-work">
+      <img alt="icon work" class="svg-icon absolute right-[3%] top-[-6%]" src="images/icon-work.svg">
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+      <div class="sub-card">
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-</body>
+        <div class="flex items-center">
+          <span class="text-white font-medium">Work</span>
+          <img alt="icon ellipsis" class="w-[21px] h-[5px] ml-auto " src="images/icon-ellipsis.svg">
+        </div>
+
+        <div class="flex items-start laptop:flex-col laptop:gap-2">
+          <span class="text-white text-3xl font-light laptop:text-6xl">32hrs</span>
+          <span class="ml-auto text-desaturated-blue laptop:ml-0 laptop:text-[15px]">Last Week-36hrs</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card bg-soft-blue">
+      <img alt="icon play" class="svg-icon absolute right-[3%] top-[-6%]" src="images/icon-play.svg">
+
+      <div class="sub-card">
+        <div class="flex items-center">
+          <span class="text-white font-medium">Play</span>
+          <img alt="icon ellipsis" class="w-[21px] h-[5px] ml-auto " src="images/icon-ellipsis.svg">
+        </div>
+
+        <div class="flex items-start">
+          <span class="text-white text-3xl font-light">10hrs</span>
+          <span class="ml-auto text-desaturated-blue">Last Week-36hrs</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card bg-light-red-study">
+      <img alt="icon study" class="svg-icon absolute right-[3%] top-[-6%]" src="images/icon-study.svg">
+      <div class="sub-card">
+        <div class="flex items-center">
+          <span class="text-white font-medium">Study</span>
+          <img alt="icon ellipsis" class="w-[21px] h-[5px] ml-auto " src="images/icon-ellipsis.svg">
+        </div>
+
+        <div class="flex items-start">
+          <span class="text-white text-3xl font-light">4hrs</span>
+          <span class="ml-auto text-desaturated-blue">Last Week-7hrs</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="card bg-lime-green">
+      <img alt="icon exercise" class="svg-icon absolute right-[3%] top-[-6%]" src="images/icon-exercise.svg">
+
+      <div class="sub-card">
+        <div class="flex items-center">
+          <span class="text-white font-medium">Exercise</span>
+          <img alt="icon ellipsis" class="w-[21px] h-[5px] ml-auto " src="images/icon-ellipsis.svg">
+        </div>
+        <div class="flex items-start">
+          <span class="text-3xl text-white font-light">4hrs</span>
+          <span class="text-desaturated-blue ml-auto">Last Week-5hrs</span>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-violet">
+      <img alt="icon" class="svg-icon absolute right-[3%] top-[-6%]" src="images/icon-social.svg">
+      <div class="sub-card">
+        <div class="flex items-center">
+          <span class="text-white font-medium">Social</span>
+          <img alt="icon ellipsis" class="w-[21px] h-[5px] ml-auto " src="images/icon-ellipsis.svg">
+        </div>
+        <div class="flex items-start">
+          <span class="text-white text-3xl font-light">5hrs</span>
+          <span class="ml-auto text-desaturated-blue">Last Week-10hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-soft-orange">
+      <img alt="icon self care" class="svg-icon absolute right-[3%] top-[-6%]" src="images/icon-self-care.svg">
+      <div class="sub-card">
+        <div class="flex items-center">
+          <span class="text-white font-medium">Self Care</span>
+          <img alt="icon ellipsis" class="w-[21px] h-[5px] ml-auto " src="images/icon-ellipsis.svg">
+        </div>
+        <div class="flex items-start">
+          <span class="text-white text-3xl font-light">7hrs</span>
+          <span class="text-desaturated-blue ml-auto">Last Week-2hrs</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  </body>
 </html>

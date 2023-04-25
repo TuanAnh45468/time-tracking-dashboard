@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
-    colors:{
+    colors: {
       blue: "hsl(246, 80%, 60%)",
       "soft-blue": "hsl(195, 74%, 62%)",
       "deep-blue": "hsl(226, 43%, 10%)",
@@ -12,26 +12,26 @@ module.exports = {
       "light-red-work": "hsl(15, 100%, 70%)",
       "light-red-study": "hsl(348, 100%, 68%)",
       "lime-green": "hsl(145, 58%, 55%)",
-      "violet": "hsl(264, 64%, 52%)",
+      violet: "hsl(264, 64%, 52%)",
       "soft-orange": "hsl(43, 84%, 65%)",
+      white: "#ffffff",
     },
-    screens:{
+    screens: {
       mobile: "375px",
-      laptop: "1440px"
+      laptop: "1440px",
     },
 
     extend: {
-      fontFamily:{
-        "rubik": ['Rubik', 'sans-serif']
+      fontFamily: {
+        rubik: ["Rubik", "sans-serif"],
       },
 
       fontWeight: {
         light: 300,
         regular: 400,
-        medium: 500
-      }
+        medium: 500,
+      },
     },
   },
   plugins: [],
-}
-
+};

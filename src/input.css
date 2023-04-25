@@ -8,3 +8,17 @@
         @apply font-rubik text-lg
     }
 }
+
+@layer components{
+    .svg-icon{
+        @apply mobile:w-[78px] mobile:h-[78px]
+    }
+
+    .card{
+        @apply mobile:h-[160px] laptop:h-[244px]  mobile:w-[327px] rounded-xl overflow-hidden relative
+    }
+
+    .sub-card{
+        @apply mobile:h-[122px] laptop:h-[199px] mobile:px-6 bg-dark-blue rounded-xl mobile:w-[328px] grid absolute top-[24%]
+    }
+}
