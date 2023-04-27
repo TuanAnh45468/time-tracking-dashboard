@@ -33,9 +33,9 @@
       </div>
 
       <div class="absolute flex laptop:flex-col laptop:pl-8 mobile:place-content-around laptop:items-start mobile:items-end laptop:justify-end rounded-xl pb-6 z-[-1] text-desaturated-blue translate-x-[0%] mobile:translate-y-[-66%] laptop:translate-y-[-68%] mobile:w-[327px] mobile:h-[203px] laptop:h-[518px] bg-dark-blue">
-        <span>Daily</span>
-        <span class="text-white">Weekly</span>
-        <span>Monthly</span>
+        <button class="toggleBtn text-white" data-target="dailyData">Daily</button>
+        <button class="toggleBtn" data-target="weeklyData">Weekly</button>
+        <button class="toggleBtn" data-target="monthlyData">Monthly</button>
       </div>
     </div>
 
@@ -49,9 +49,19 @@
           <img alt="icon ellipsis" class="ml-auto w-[21px] h-[5px]" src="images/icon-ellipsis.svg">
         </div>
 
-        <div class="flex laptop:flex-col items-start laptop:gap-2">
+        <div class="flex laptop:flex-col items-start laptop:gap-2 dailyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">5hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Day-7hrs</span>
+        </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 weeklyData">
           <span class="text-3xl laptop:text-6xl font-light text-white">32hrs</span>
           <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Week-36hrs</span>
+        </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 monthlyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">103hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Month-128hrs</span>
         </div>
       </div>
     </div>
@@ -65,9 +75,19 @@
           <img alt="icon ellipsis" class="ml-auto w-[21px] h-[5px]" src="images/icon-ellipsis.svg">
         </div>
 
-        <div class="flex laptop:flex-col items-start laptop:gap-2">
+        <div class="flex laptop:flex-col items-start laptop:gap-2 dailyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">1hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Day-2hrs</span>
+        </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 weeklyData">
           <span class="text-3xl laptop:text-6xl font-light text-white">10hrs</span>
-          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Week-36hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Week-8hrs</span>
+        </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 monthlyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">23hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Month-29hrs</span>
         </div>
       </div>
 
@@ -81,9 +101,19 @@
           <img alt="icon ellipsis" class="ml-auto w-[21px] h-[5px]" src="images/icon-ellipsis.svg">
         </div>
 
-        <div class="flex laptop:flex-col items-start laptop:gap-2">
+        <div class="flex laptop:flex-col items-start laptop:gap-2 dailyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">0hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Day-1hrs</span>
+        </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 weeklyData">
           <span class="text-3xl laptop:text-6xl font-light text-white">4hrs</span>
           <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Week-7hrs</span>
+        </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 monthlyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">13hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Month-19hrs</span>
         </div>
 
       </div>
@@ -98,10 +128,20 @@
           <span class="font-medium text-white">Exercise</span>
           <img alt="icon ellipsis" class="ml-auto w-[21px] h-[5px]" src="images/icon-ellipsis.svg">
         </div>
-        <div class="flex laptop:flex-col items-start laptop:gap-2">
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 dailyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">1hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Day-1hrs</span>
+        </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 weeklyData">
           <span class="text-3xl laptop:text-6xl font-light text-white">4hrs</span>
           <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Week-5hrs</span>
+        </div>
 
+        <div class="flex laptop:flex-col items-start laptop:gap-2 monthlyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">11hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Month-18hrs</span>
         </div>
       </div>
     </div>
@@ -113,10 +153,22 @@
           <span class="font-medium text-white">Social</span>
           <img alt="icon ellipsis" class="ml-auto w-[21px] h-[5px]" src="images/icon-ellipsis.svg">
         </div>
-        <div class="flex laptop:flex-col items-start laptop:gap-2">
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 dailyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">1hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Day-3hrs</span>
+        </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 weeklyData">
           <span class="text-3xl laptop:text-6xl font-light text-white">5hrs</span>
           <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Week-10hrs</span>
         </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 monthlyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">21hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Month-23hrs</span>
+        </div>
+
       </div>
     </div>
 
@@ -127,14 +179,26 @@
           <span class="font-medium text-white">Self Care</span>
           <img alt="icon ellipsis" class="ml-auto w-[21px] h-[5px]" src="images/icon-ellipsis.svg">
         </div>
-        <div class="flex laptop:flex-col items-start laptop:gap-2">
-          <span class="text-3xl laptop:text-6xl font-light text-white">7hrs</span>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 dailyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">0hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Day-1hrs</span>
+        </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 weeklyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">2hrs</span>
           <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Week-2hrs</span>
         </div>
+
+        <div class="flex laptop:flex-col items-start laptop:gap-2 monthlyData">
+          <span class="text-3xl laptop:text-6xl font-light text-white">7hrs</span>
+          <span class="laptop:ml-0 ml-auto text-desaturated-blue laptop:text-[15px]">Last Month-11hrs</span>
+        </div>
+
       </div>
     </div>
   </main>
 
-
+  <script src="main.js"></script>
   </body>
 </html>

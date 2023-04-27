@@ -21,4 +21,5 @@
     .sub-card{
         @apply mobile:h-[122px] laptop:h-[199px] mobile:px-6 bg-dark-blue rounded-xl mobile:w-[328px] grid absolute top-[24%]
     }
+
 }
