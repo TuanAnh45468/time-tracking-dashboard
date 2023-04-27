@@ -22,4 +22,8 @@
         @apply mobile:h-[122px] laptop:h-[199px] mobile:px-6 bg-dark-blue rounded-xl mobile:w-[328px] grid absolute top-[24%]
     }
 
+    .auto-fit-columns{
+        grid-template-columns: repeat(4, min-content);
+    }
+
 }

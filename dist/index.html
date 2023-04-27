@@ -22,18 +22,18 @@
 
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
-  <body class="bg-deep-blue">
+  <body class="bg-deep-blue flex flex-col min-h-screen justify-center">
 
-  <main class="mobile:mx-6 mobile:my-20 grid auto-rows-auto justify-center laptop:grid-cols-4 mobile:gap-y-6 bg-deep-blue">
+  <main class="mobile:mx-6 mobile:my-20 grid auto-rows-auto justify-center laptop:auto-fit-columns mobile:gap-y-6 laptop:gap-x-6 bg-deep-blue">
 
     <div class="relative z-10 laptop:row-span-2 laptop:row-start-1 mobile:h-[203px] laptop:h-[518px]">
       
-      <div class="flex laptop:flex-col laptop:items-start items-center gap-5 rounded-xl laptop:pt-9 laptop:pl-8 bg-blue mobile:w-[327px] mobile:h-[133px] laptop:h-[354px]">
+      <div class="flex laptop:flex-col laptop:items-start items-center gap-5 rounded-xl laptop:pt-9 laptop:pl-8 bg-blue mobile:w-[327px] mobile:h-[133px] laptop:h-[354px] laptop:w-[255px]">
         <img alt="avatar" class="laptop:ml-0 mobile:ml-8 rounded-full border-4 border-white mobile:w-[64px] mobile:h-[64px] laptop:w-[78px] laptop:h-[78px]" src="images/image-jeremy.png">
         <p class="text-desaturated-blue laptop:text-[15px]">Report for <br>  <span class="laptop:text-4xl laptop:font-light text-white">Jeremy Robson</span></p>
       </div>
 
-      <div class="absolute flex laptop:flex-col laptop:pl-8 mobile:place-content-around laptop:items-start mobile:items-end laptop:justify-end rounded-xl pb-6 z-[-1] text-desaturated-blue translate-x-[0%] mobile:translate-y-[-66%] laptop:translate-y-[-68%] mobile:w-[327px] mobile:h-[203px] laptop:h-[518px] bg-dark-blue">
+      <div class="absolute flex laptop:flex-col laptop:pl-8 mobile:place-content-around laptop:items-start mobile:items-end laptop:justify-end rounded-xl pb-6 z-[-1] text-desaturated-blue translate-x-[0%] mobile:translate-y-[-66%] laptop:translate-y-[-68%] laptop:w-[255px] mobile:w-[327px] mobile:h-[203px] laptop:h-[518px] bg-dark-blue">
         <button class="toggleBtn text-white" data-target="dailyData">Daily</button>
         <button class="toggleBtn" data-target="weeklyData">Weekly</button>
         <button class="toggleBtn" data-target="monthlyData">Monthly</button>
