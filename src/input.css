@@ -15,7 +15,7 @@
     }
 
     .card{
-        @apply mobile:h-[160px] laptop:h-[244px]  mobile:w-[327px] rounded-xl overflow-hidden relative
+        @apply mobile:h-[160px] laptop:h-[244px]  mobile:w-[327px] laptop:w-[255px] rounded-xl overflow-hidden relative
     }
 
     .sub-card{

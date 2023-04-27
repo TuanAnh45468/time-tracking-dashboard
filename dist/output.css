@@ -545,6 +545,7 @@ body {
 @media (min-width: 1440px) {
   .card {
     height: 244px;
+    width: 255px;
   }
 }
 
@@ -635,14 +636,6 @@ body {
 
 .flex-col {
   flex-direction: column;
-}
-
-.place-items-center {
-  place-items: center;
-}
-
-.content-center {
-  align-content: center;
 }
 
 .items-start {
@@ -845,10 +838,6 @@ body {
   .laptop\:translate-y-\[-68\%\] {
     --tw-translate-y: -68%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .laptop\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .laptop\:flex-col {
